@@ -1,0 +1,48 @@
+/*
+File: style.css
+Created: 12/17/2023
+GUI Assignment: Assignment 5
+Sources: 
+    https://jqueryui.com/
+    https://stackoverflow.com/questions/12349053/jquery-ui-on-drop-attach-the-div-to-its-droppable-target
+    https://stackoverflow.com/questions/18294487/jquery-ui-drag-drop-snap-to-bottom
+    https://jqueryui.com/draggable/
+    https://api.jqueryui.com/droppable/
+    https://stackoverflow.com/questions/1162487/using-jquery-ui-drag-and-drop-changing-the-dragged-element-on-drop
+    https://stackoverflow.com/questions/8097926/jquery-ui-prevent-draggable-to-be-dropped-on-another-inside-a-droppable-div
+
+Copyright (c) 2023 by ThienTran. All rights reserved. 
+May be freely copied/excerpted for educational purposes 
+with credit to the author.
+
+Updated by TL on 12/17/2023
+*/
+
+h1 {
+    text-align: center;
+    color:midnightblue;
+}
+
+#scrabbleBoard {
+    margin-top: 4.5%;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.drop-tiles {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: -75px;
+}
+
+.drop_letter {
+    width: 5.3vw;
+    height: 75px;
+
+}

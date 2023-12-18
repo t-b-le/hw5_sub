@@ -1,0 +1,69 @@
+<!--
+File: index.html
+Created: 12/17/2023
+GUI Assignment: Assignment 5
+Sources: 
+    https://jqueryui.com/
+    https://stackoverflow.com/questions/12349053/jquery-ui-on-drop-attach-the-div-to-its-droppable-target
+    https://stackoverflow.com/questions/18294487/jquery-ui-drag-drop-snap-to-bottom
+    https://jqueryui.com/draggable/
+    https://api.jqueryui.com/droppable/
+    https://stackoverflow.com/questions/1162487/using-jquery-ui-drag-and-drop-changing-the-dragged-element-on-drop
+    https://stackoverflow.com/questions/8097926/jquery-ui-prevent-draggable-to-be-dropped-on-another-inside-a-droppable-div
+
+Copyright (c) 2023 by ThienTran. All rights reserved. 
+May be freely copied/excerpted for educational purposes 
+with credit to the author.
+
+Updated by TL on 12/17/2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThienTran's Scrabble Game</title>
+    <!---css stuff-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>The BEST Scrabble Game EVER</h1>
+
+    <div id="gameContainer">
+        <div id="scrabbleBoard">
+            <span>
+                <img src="graphics_data/Scrabble_Board_OneLine.png" alt="Scrabble Board">
+            </span>
+            <div class="dropTiles"></div>
+        </div>
+        <div id="tileContainer">
+            <span>
+                <img src="graphics_data/scrabble-tile-holder-406774_640.png" alt="Tiles Holder">
+            </span>
+            <div id="tilesSlots"></div>
+        </div>
+        <div id="letterContainer">
+            <div id="lettersPlayed"></div>
+            <div id="msg"></div>
+        </div>
+        <div id="scoreboardContainer">
+            <span id="displayScore">Total Score: </span><span id="scoreNum"></span><br>
+            <span id="displayCurrScore">Current Word Score: </span><span id="currNum"></span><br>
+            <span id="displayTileAmt">Tiles Remaining: </span><span id="tileNum"></span>
+        </div>
+        <!-- New Game Button -->
+        <button type="button" onclick="restart()">Restart</button>
+        <button type="button" onclick="contin()">Submit Word</button>
+    </div>
+
+    <!--js stuff-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link href=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" script src="js/content.js"></script>
+</body>
+</html>
